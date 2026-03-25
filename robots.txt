@@ -1,0 +1,3 @@
+﻿User-agent: *
+Allow: /
+Sitemap: https://cwbtopo.github.io/sitemap.xml
