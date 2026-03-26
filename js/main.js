@@ -158,16 +158,19 @@ function initScrollAnimations() {
 /**
  * Contact Form Handler
  */
+// URL do Google Apps Script - substituir apos implantar o Web App
+var FORM_SCRIPT_URL = '';
+
 function initContactForm() {
-    const form = document.getElementById('contato-form');
+    var form = document.getElementById('contato-form');
 
     if (form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 
             // Get form data
-            const formData = new FormData(form);
-            const data = {};
+            var formData = new FormData(form);
+            var data = {};
             formData.forEach(function(value, key) {
                 data[key] = value;
             });
@@ -184,15 +187,39 @@ function initContactForm() {
                 return;
             }
 
-            // Here you would typically send the data to a server
-            // For now, we'll just show a success message
-            console.log('Form data:', data);
+            // Disable button while sending
+            var btn = form.querySelector('button[type="submit"]');
+            var btnText = btn.textContent;
+            btn.disabled = true;
+            btn.textContent = 'Enviando...';
 
-            // Show success message
-            showNotification('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
+            // Add origin for server-side validation
+            data.origin = location.origin;
 
-            // Reset form
-            form.reset();
+            // Send to Google Apps Script
+            if (!FORM_SCRIPT_URL) {
+                console.warn('FORM_SCRIPT_URL nao configurada');
+                showNotification('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
+                form.reset();
+                btn.disabled = false;
+                btn.textContent = btnText;
+                return;
+            }
+
+            fetch(FORM_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'text/plain' },
+                body: JSON.stringify(data)
+            }).then(function() {
+                showNotification('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
+                form.reset();
+            }).catch(function() {
+                showNotification('Erro ao enviar mensagem. Tente novamente.', 'error');
+            }).finally(function() {
+                btn.disabled = false;
+                btn.textContent = btnText;
+            });
         });
     }
 }
