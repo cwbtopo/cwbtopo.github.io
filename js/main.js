@@ -159,7 +159,7 @@ function initScrollAnimations() {
  * Contact Form Handler
  */
 // URL do Google Apps Script - substituir apos implantar o Web App
-var FORM_SCRIPT_URL = '';
+var FORM_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzkIvazCsBEr6pzSpaglkJUrKM29V_O8DVUyKzWAbdOt7nbEJ80lg3Ml25uUNlvByIqNQ/exec';
 
 function initContactForm() {
     var form = document.getElementById('contato-form');
