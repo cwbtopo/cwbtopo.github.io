@@ -1,1 +1,7 @@
 *.gs
+
+# Claude Code
+.claude/
+CLAUDE.md
+.claudeignore
+
