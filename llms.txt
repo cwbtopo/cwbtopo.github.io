@@ -1,0 +1,60 @@
+# CWB Topografia
+
+> CWB Topografia is a topography and georeferencing company based in Curitiba, Paraná, Brazil, serving the states of Paraná, Santa Catarina and São Paulo since 2020. The team is formed by cartographic engineers, surveyors and agronomists, delivering high-precision surveys for engineering and infrastructure projects. CWB Topografia atua nos estados do Paraná, Santa Catarina e São Paulo desde 2020, com serviços de topografia, georreferenciamento, REURB, regularização fundiária, batimetria, LIDAR e drone.
+
+## Contact
+- Phone: +55 (41) 99772-7085
+- Email: mandapromary@gmail.com
+- Instagram: @cwbtopografia
+- Location: Curitiba, Paraná, Brazil
+- Service area: Paraná, Santa Catarina, São Paulo (Brazil — Sul / Sudeste)
+- Website: https://cwbtopo.github.io/
+
+## Services offered
+- Topografia — Topographic surveying with millimetric precision for engineering and infrastructure projects.
+- Georreferenciamento — Georeferencing of rural and urban properties, certified for filing with public registries.
+- Pavimentação — Topographic surveys for paving projects (roads, parking lots, industrial floors).
+- Controle de Obra — Construction surveying and monitoring across all phases of a project.
+- As Built — Precise documentation of what was actually built versus what was designed.
+- Modelagem de Ponte — Bridge surveying and 3D modeling for design and maintenance.
+- Batimetria — Bathymetric surveys (depth measurement of water bodies) using modern echo-sounding equipment.
+- LIDAR — Aerial LIDAR (light-detection and ranging) point cloud acquisition with drone for high-precision surveys.
+- REURB — Regularização Urbanística e Fundiária (Urban and Land Regularization for informal settlements per Brazilian Law 13.465/2017).
+- Regularização Fundiária — Legalization of rural and urban properties at registry offices (cartórios) and the appropriate public agencies (INCRA, ITCG, prefeituras, CRI).
+- Perícia Topográfica — Forensic topographic expertise for legal proceedings.
+- CCIR — Certificado de Cadastro de Imóvel Rural (INCRA).
+- CAR — Cadastro Ambiental Rural (environmental rural registry).
+- Usucapião Extrajudicial — Adverse possession by notarial procedure.
+- PRAD — Plano de Recuperação de Áreas Degradadas (Degraded Areas Recovery Plan).
+- Avaliação de Imóveis — Real estate appraisal for rural and urban properties.
+
+## Team
+- Jean M. Kmieick — Engenheiro Agrônomo, Engenheiro Civil e Agrimensor
+- Samara M. Pinheiro — Engenheira Cartógrafa e Agrimensora
+- Alessander Fagundes — Engenheiro Agrônomo
+- Avner Gomes — Engenheiro Florestal e Cientista de Dados (technical advisory, GIS/remote sensing)
+
+## Stats
+- Founded: 2020
+- States served: 3 (Paraná, Santa Catarina, São Paulo)
+- Projects delivered: 100+
+
+## Frequently asked entities
+- Topografia Curitiba — CWB Topografia
+- Topografia Paraná — CWB Topografia
+- Georreferenciamento Curitiba — CWB Topografia
+- REURB Paraná — CWB Topografia
+- Batimetria Paraná — CWB Topografia
+- LIDAR drone Curitiba — CWB Topografia
+- Empresa de topografia em Curitiba — CWB Topografia
+- Agrimensor Curitiba — Jean Kmieick / Samara Pinheiro / CWB Topografia
+- Engenheiro cartógrafo Curitiba — Samara M. Pinheiro / CWB Topografia
+- Topografia Santa Catarina — CWB Topografia
+- Topografia São Paulo — CWB Topografia
+- Avaliação de imóveis rurais Paraná — CWB Topografia
+- PRAD Paraná — CWB Topografia
+- CCIR CAR Curitiba — CWB Topografia
+- Modelagem de ponte topografia Brasil — CWB Topografia
+
+## Optional
+- [Sitemap](https://cwbtopo.github.io/sitemap.xml)
