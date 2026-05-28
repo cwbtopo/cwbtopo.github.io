@@ -601,6 +601,15 @@ h4 { font-size: 1.5rem; font-weight: 600; }
     border-radius: var(--radius-full);
 }
 
+.outros-lista li a {
+    color: inherit;
+    transition: color var(--transition-normal);
+}
+
+.outros-lista li a:hover {
+    color: var(--color-primary);
+}
+
 /* ================================
    Projetos Section
    ================================ */

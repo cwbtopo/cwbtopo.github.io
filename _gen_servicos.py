@@ -181,9 +181,7 @@ PAGE = """<!DOCTYPE html>
                 __BADGE__
             </div>
 
-            <div class="spt-galeria">
-                __GALERIA__
-            </div>
+            __GALERIA_SECTION__
 
             <div class="detalhe-conteudo">
                 __CONTEUDO__
@@ -468,12 +466,179 @@ SERVICES = [
             ]},
         ],
     },
+    {
+        "slug": "pericia",
+        "title": "Perícia Topográfica",
+        "tagline": "Perícia técnica em divisas, áreas e conflitos de propriedade",
+        "desc": "Perícia topográfica judicial e extrajudicial: levantamento de divisas, conferência de áreas, laudos e pareceres técnicos para conflitos de propriedade e processos judiciais. CWB Topografia, Paraná, Santa Catarina e São Paulo.",
+        "keywords": "perícia topográfica, perícia judicial topografia, conflito de divisas, conferência de área, laudo pericial, assistente técnico, parecer técnico topografia, perito topógrafo Curitiba, CWB Topografia",
+        "imgs": [],
+        "blocos": [
+            {"h2": "O serviço", "p": [
+                "A <strong>perícia topográfica</strong> esclarece tecnicamente questões de divisas, áreas e localização de imóveis em processos judiciais e extrajudiciais. Atuamos como peritos ou assistentes técnicos, produzindo levantamentos, laudos e pareceres que dão base à decisão.",
+            ]},
+            {"h2": "O que entregamos", "ul": [
+                "Levantamento topográfico das divisas em discussão;",
+                "Confrontação entre títulos, matrículas e a situação de campo;",
+                "Conferência de áreas e identificação de sobreposições;",
+                "Laudo pericial e parecer técnico;",
+                "Atuação como assistente técnico das partes.",
+            ]},
+            {"h2": "Aplicações", "ul": [
+                "Ações de divisão, demarcação e reivindicatórias;",
+                "Conflitos de divisa entre propriedades;",
+                "Sobreposição de áreas e erros de matrícula;",
+                "Apoio técnico a advogados e ao juízo.",
+            ]},
+        ],
+    },
+    {
+        "slug": "ccir",
+        "title": "CCIR",
+        "tagline": "Certificado de Cadastro de Imóvel Rural junto ao INCRA",
+        "desc": "Emissão e regularização do CCIR (Certificado de Cadastro de Imóvel Rural) junto ao INCRA: atualização cadastral, correção de dados e apoio à regularidade do imóvel rural. CWB Topografia.",
+        "keywords": "CCIR, certificado de cadastro de imóvel rural, INCRA, cadastro rural, regularização CCIR, atualização cadastral imóvel rural, CWB Topografia",
+        "imgs": [],
+        "blocos": [
+            {"h2": "O serviço", "p": [
+                "O <strong>CCIR</strong> (Certificado de Cadastro de Imóvel Rural) é o documento emitido pelo INCRA que comprova a regularidade cadastral do imóvel rural e é exigido para venda, desmembramento, arrendamento e financiamento. Auxiliamos na emissão, atualização e correção das informações cadastrais.",
+            ]},
+            {"h2": "O que entregamos", "ul": [
+                "Análise e atualização do cadastro do imóvel no INCRA;",
+                "Correção de área, titularidade e demais dados;",
+                "Apoio à emissão do CCIR;",
+                "Compatibilização com o georreferenciamento (SIGEF);",
+                "Orientação sobre a regularidade do imóvel rural.",
+            ]},
+            {"h2": "Aplicações", "ul": [
+                "Venda, doação e partilha de imóveis rurais;",
+                "Desmembramento e remembramento de glebas;",
+                "Financiamento e crédito rural;",
+                "Regularização cadastral junto ao INCRA.",
+            ]},
+        ],
+    },
+    {
+        "slug": "car",
+        "title": "CAR — Cadastro Ambiental Rural",
+        "tagline": "Registro ambiental obrigatório dos imóveis rurais",
+        "desc": "Elaboração do CAR (Cadastro Ambiental Rural): mapeamento de APP, Reserva Legal e uso do solo, com inscrição no SICAR para regularidade ambiental do imóvel rural. CWB Topografia, Paraná e região Sul.",
+        "keywords": "CAR, cadastro ambiental rural, SICAR, APP, reserva legal, regularização ambiental, mapeamento de uso do solo, georreferenciamento ambiental, CWB Topografia",
+        "imgs": [],
+        "blocos": [
+            {"h2": "O serviço", "p": [
+                "O <strong>CAR</strong> (Cadastro Ambiental Rural) é o registro eletrônico obrigatório para todos os imóveis rurais, integrando as informações ambientais da propriedade no SICAR. Fazemos o mapeamento das áreas e a inscrição completa do imóvel.",
+            ]},
+            {"h2": "O que entregamos", "ul": [
+                "Mapeamento de Áreas de Preservação Permanente (APP);",
+                "Delimitação da Reserva Legal;",
+                "Levantamento das áreas de uso consolidado e remanescentes de vegetação;",
+                "Inscrição e retificação do imóvel no SICAR;",
+                "Apoio à adequação ambiental da propriedade.",
+            ]},
+            {"h2": "Aplicações", "ul": [
+                "Regularidade ambiental obrigatória do imóvel rural;",
+                "Acesso a crédito e licenciamento;",
+                "Programas de regularização ambiental (PRA);",
+                "Adequação ao Código Florestal.",
+            ]},
+        ],
+    },
+    {
+        "slug": "usucapiao",
+        "title": "Usucapião Extrajudicial",
+        "tagline": "Documentação técnica para reconhecimento da propriedade em cartório",
+        "desc": "Apoio técnico ao usucapião extrajudicial: planta e memorial descritivo georreferenciados, assinados por profissional habilitado, para reconhecimento da posse diretamente no cartório. CWB Topografia.",
+        "keywords": "usucapião extrajudicial, planta e memorial usucapião, georreferenciamento usucapião, ata notarial, reconhecimento de posse, regularização de propriedade cartório, CWB Topografia",
+        "imgs": [],
+        "blocos": [
+            {"h2": "O serviço", "p": [
+                "O <strong>usucapião extrajudicial</strong> permite reconhecer a propriedade de um imóvel diretamente no cartório, sem ação judicial, desde que apresentada a documentação técnica adequada. Elaboramos a planta e o memorial descritivo georreferenciados, assinados por profissional habilitado, peça essencial do processo.",
+            ]},
+            {"h2": "O que entregamos", "ul": [
+                "Levantamento topográfico do imóvel;",
+                "Planta e memorial descritivo georreferenciados;",
+                "Anotação de Responsabilidade Técnica (ART);",
+                "Identificação e descrição dos confrontantes;",
+                "Documentação técnica para o tabelionato e o cartório de registro.",
+            ]},
+            {"h2": "Aplicações", "ul": [
+                "Imóveis ocupados sem escritura ou registro;",
+                "Regularização de posse de longa data;",
+                "Imóveis urbanos e rurais;",
+                "Reconhecimento da propriedade em cartório.",
+            ]},
+        ],
+    },
+    {
+        "slug": "prad",
+        "title": "PRAD — Plano de Recuperação de Áreas Degradadas",
+        "tagline": "Diagnóstico e plano técnico para recuperação ambiental",
+        "desc": "Elaboração de PRAD (Plano de Recuperação de Áreas Degradadas): diagnóstico, mapeamento da área e definição das ações de recuperação ambiental para atender exigências de órgãos ambientais. CWB Topografia.",
+        "keywords": "PRAD, plano de recuperação de áreas degradadas, recuperação ambiental, APP degradada, condicionante ambiental, reflorestamento, diagnóstico ambiental, CWB Topografia",
+        "imgs": [],
+        "blocos": [
+            {"h2": "O serviço", "p": [
+                "O <strong>PRAD</strong> (Plano de Recuperação de Áreas Degradadas) reúne o diagnóstico e o conjunto de ações necessárias para recuperar áreas alteradas ou degradadas, sendo frequentemente exigido como condicionante por órgãos ambientais. Realizamos o levantamento, o diagnóstico e a elaboração técnica do plano.",
+            ]},
+            {"h2": "O que entregamos", "ul": [
+                "Levantamento e mapeamento da área degradada;",
+                "Diagnóstico ambiental da situação atual;",
+                "Definição das técnicas e etapas de recuperação;",
+                "Cronograma e indicadores de monitoramento;",
+                "Documentação técnica para o órgão ambiental.",
+            ]},
+            {"h2": "Aplicações", "ul": [
+                "Atendimento a condicionantes de licenciamento;",
+                "Recuperação de APP e Reserva Legal;",
+                "Áreas afetadas por obras ou atividades;",
+                "Compensação e regularização ambiental.",
+            ]},
+        ],
+    },
+    {
+        "slug": "avaliacao-imoveis",
+        "title": "Avaliação de Imóveis",
+        "tagline": "Laudos de avaliação conforme a norma ABNT NBR 14653",
+        "desc": "Avaliação de imóveis urbanos e rurais com laudos técnicos conforme a norma ABNT NBR 14653, para fins de venda, garantia, partilha, desapropriação e processos judiciais. CWB Topografia.",
+        "keywords": "avaliação de imóveis, laudo de avaliação, NBR 14653, valor de mercado, avaliação imóvel rural, avaliação imóvel urbano, laudo técnico imobiliário, desapropriação, CWB Topografia",
+        "imgs": [],
+        "badge": "Conforme a norma ABNT NBR 14653",
+        "blocos": [
+            {"h2": "O serviço", "p": [
+                "A <strong>avaliação de imóveis</strong> determina, de forma técnica e fundamentada, o valor de mercado de propriedades urbanas e rurais. Emitimos laudos conforme a norma <strong>ABNT NBR 14653</strong>, com metodologia reconhecida e aceita por instituições, cartórios e pelo Poder Judiciário.",
+            ]},
+            {"h2": "O que entregamos", "ul": [
+                "Vistoria e caracterização do imóvel;",
+                "Pesquisa de mercado e tratamento dos dados;",
+                "Definição do valor com metodologia da NBR 14653;",
+                "Laudo de avaliação fundamentado;",
+                "Anotação de Responsabilidade Técnica (ART).",
+            ]},
+            {"h2": "Aplicações", "ul": [
+                "Compra, venda e garantia de imóveis;",
+                "Partilha, inventário e divisão de bens;",
+                "Desapropriação e processos judiciais;",
+                "Decisões de investimento e gestão patrimonial.",
+            ]},
+        ],
+    },
 ]
 
 
 def build(svc):
     url = f"{BASE_URL}/{svc['slug']}.html"
-    ogimg = f"{BASE_URL}/images/servicos/{svc['imgs'][0][0]}"
+    imgs = svc.get("imgs", [])
+    if imgs:
+        ogimg = f"{BASE_URL}/images/servicos/{imgs[0][0]}"
+        galeria_section = (
+            '<div class="spt-galeria">\n'
+            f'                {galeria(imgs)}\n'
+            '            </div>'
+        )
+    else:
+        ogimg = f"{BASE_URL}/images/logo.jpg"
+        galeria_section = ""
     badge = f'<span class="detalhe-norma">{escape(svc["badge"])}</span>' if svc.get("badge") else ""
     html = (PAGE
             .replace("__TITLE__", escape(svc["title"]))
@@ -483,7 +648,7 @@ def build(svc):
             .replace("__URL__", url)
             .replace("__OGIMG__", ogimg)
             .replace("__BADGE__", badge)
-            .replace("__GALERIA__", galeria(svc["imgs"]))
+            .replace("__GALERIA_SECTION__", galeria_section)
             .replace("__CONTEUDO__", conteudo(svc["blocos"])))
     return html
 
