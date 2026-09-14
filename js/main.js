@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize all components
     initNavigation();
     initSmoothScroll();
-    initScrollAnimations();
     initContactForm();
     initScrollHeader();
 });
@@ -22,24 +21,27 @@ function initNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
 
     if (navToggle && navMenu) {
+        var setOpen = function(open) {
+            navToggle.classList.toggle('active', open);
+            navMenu.classList.toggle('active', open);
+            navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        };
+
         navToggle.addEventListener('click', function() {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
+            setOpen(!navMenu.classList.contains('active'));
         });
 
         // Close menu when clicking on a link
-        navLinks.forEach(function(link) {
+        navMenu.querySelectorAll('a').forEach(function(link) {
             link.addEventListener('click', function() {
-                navToggle.classList.remove('active');
-                navMenu.classList.remove('active');
+                setOpen(false);
             });
         });
 
         // Close menu when clicking outside
         document.addEventListener('click', function(event) {
             if (!navToggle.contains(event.target) && !navMenu.contains(event.target)) {
-                navToggle.classList.remove('active');
-                navMenu.classList.remove('active');
+                setOpen(false);
             }
         });
     }

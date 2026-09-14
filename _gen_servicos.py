@@ -82,65 +82,7 @@ PAGE = """<!DOCTYPE html>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <style>
-        .servico-detalhe {
-            padding: calc(var(--spacing-4xl) + 60px) 0 var(--spacing-4xl);
-            background: linear-gradient(180deg, var(--color-white) 0%, var(--color-light) 100%);
-        }
-        .detalhe-breadcrumb {
-            font-size: 0.875rem;
-            color: var(--color-gray-600);
-            margin-bottom: var(--spacing-lg);
-        }
-        .detalhe-breadcrumb a { color: var(--color-primary); font-weight: 600; }
-        .detalhe-header { max-width: 820px; margin: 0 auto var(--spacing-2xl); text-align: center; }
-        .detalhe-header h1 { font-size: 2.5rem; color: var(--color-secondary); margin-bottom: var(--spacing-sm); }
-        .detalhe-tagline { font-size: 1.125rem; color: var(--color-primary-dark); font-weight: 600; margin-bottom: var(--spacing-md); }
-        .detalhe-norma {
-            display: inline-block; background: var(--gradient-primary); color: var(--color-white);
-            padding: 0.4rem 1.1rem; border-radius: var(--radius-xl); font-size: 0.875rem; font-weight: 600;
-        }
-        .spt-galeria {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--spacing-lg); margin: var(--spacing-2xl) 0;
-        }
-        .spt-galeria figure {
-            margin: 0; border-radius: var(--radius-xl); overflow: hidden;
-            box-shadow: var(--shadow-lg); background: var(--color-white);
-        }
-        .spt-galeria img {
-            width: 100%; height: 320px; object-fit: cover; display: block;
-            transition: transform var(--transition-slow);
-        }
-        .spt-galeria figure:hover img { transform: scale(1.05); }
-        .spt-galeria figcaption {
-            padding: var(--spacing-sm) var(--spacing-md); font-size: 0.875rem;
-            color: var(--color-gray-600); text-align: center;
-        }
-        .detalhe-conteudo { max-width: 880px; margin: 0 auto; }
-        .detalhe-conteudo h2 { font-size: 1.6rem; color: var(--color-primary-dark); margin: var(--spacing-2xl) 0 var(--spacing-md); }
-        .detalhe-conteudo p { color: var(--color-gray-700); margin-bottom: var(--spacing-md); line-height: 1.8; }
-        .detalhe-conteudo ul { list-style: none; margin-bottom: var(--spacing-md); }
-        .detalhe-conteudo ul li {
-            position: relative; padding-left: 1.75rem; margin-bottom: var(--spacing-sm);
-            color: var(--color-gray-700); line-height: 1.7;
-        }
-        .detalhe-conteudo ul li::before {
-            content: ''; position: absolute; left: 0; top: 0.55em; width: 9px; height: 9px;
-            border-radius: 50%; background: var(--color-primary);
-        }
-        .detalhe-cta {
-            text-align: center; margin-top: var(--spacing-2xl); padding: var(--spacing-2xl);
-            background: var(--color-white); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg);
-        }
-        .detalhe-cta h2 { margin-top: 0; }
-        @media (max-width: 768px) {
-            .spt-galeria img { height: 260px; }
-            .detalhe-header h1 { font-size: 1.9rem; }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header / Navegação -->
@@ -153,14 +95,14 @@ PAGE = """<!DOCTYPE html>
                 </a>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html#inicio" class="nav-link">Início</a></li>
-                <li><a href="index.html#sobre" class="nav-link">Sobre</a></li>
                 <li><a href="index.html#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="sondagem-spt.html" class="nav-link">Sondagem SPT</a></li>
                 <li><a href="index.html#projetos" class="nav-link">Projetos</a></li>
-                <li><a href="index.html#equipe" class="nav-link">Equipe</a></li>
+                <li><a href="index.html#sobre" class="nav-link">Sobre</a></li>
                 <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                <li class="nav-cta"><a href="#" class="btn btn-primary btn-sm" data-wa="header">Orçamento no WhatsApp</a></li>
             </ul>
-            <button class="nav-toggle" aria-label="Toggle menu">
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
         </nav>
@@ -189,7 +131,8 @@ PAGE = """<!DOCTYPE html>
                 <div class="detalhe-cta">
                     <h2>Precisa deste serviço?</h2>
                     <p>Solicite um orçamento sem compromisso. Atendemos Paraná, Santa Catarina e São Paulo.</p>
-                    <a href="index.html#contato" class="btn btn-primary">Solicitar Orçamento</a>
+                    <a href="#" class="btn btn-primary" data-wa="cta">Pedir orçamento no WhatsApp</a>
+                    <a href="index.html#contato" class="btn btn-ghost">Enviar mensagem</a>
                 </div>
             </div>
         </div>
@@ -204,16 +147,17 @@ PAGE = """<!DOCTYPE html>
                     <span class="footer-logo-text">CWB<span class="logo-accent">TOPOGRAFIA</span></span>
                 </div>
                 <div class="footer-info">
-                    <p>Desde 2020 oferecendo soluções em topografia e georreferenciamento.</p>
-                    <p>Paraná | Santa Catarina | São Paulo</p>
+                    <p>Topografia, georreferenciamento e investigação geotécnica desde 2020.</p>
+                    <p>Curitiba, PR. Atendemos Paraná, Santa Catarina e São Paulo.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 CWB Topografia. Todos os direitos reservados.</p>
+                <p>&copy; 2026 CWB Topografia. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/whatsapp.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
